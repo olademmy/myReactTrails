@@ -12,6 +12,7 @@ function NewExpense(props) {
   const saveDataHandler = (expensedata) => {
     const expenseData = { ...expensedata, id: Math.random.toString() };
     props.onAddData(expenseData);
+    seteditable(false);
   };
   return (
     <div className="new-expense">
